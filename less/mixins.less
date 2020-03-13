@@ -1,1 +1,23 @@
 // Mixins Here
+.btn {
+    padding: 15px 14px;
+    border-radius: 12px;
+    background-color: gray;
+    margin-right: 40%;
+    font-size: 15px;
+    text-align:center;
+    color: white;
+    @media @phone{
+        .margin-lr(10px, 10px)
+        // margin-left: 10px;
+        // margin-right: 10px;
+    }
+}  
+.btn:hover {
+    background-color: black;
+}
+
+.margin-lr(@l, @r) {
+    margin-left: @l;
+    margin-right: @r;
+}
